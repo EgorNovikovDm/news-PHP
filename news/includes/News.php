@@ -50,7 +50,6 @@ class News {
         $sql = "INSERT INTO news (name, date_create, image, description)";
         $sql .= "VALUES ('";
         $sql .= $database->escape_string($this->name) . "', '";
-        $sql .= $database->escape_string($this->date_create) . "', '";
         $sql .= $database->escape_string($this->image) . "', '";
         $sql .= $database->escape_string($this->description) . "')";
         if($database->query($sql)) {
